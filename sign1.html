@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            /* Background kontainer element */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #333;
+        }
+
+        .container .signature {
+            /* mengatur gaya class signature yang ada di dalam class container */
+            width: 700px;
+            display: flex;
+            align-items: center;
+            background: #222;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #000;
+            padding: 10px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container .signature .image img {
+            /* Mengatur gaya element image yang ada didalam class container > signature > image */
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 5px #333;
+            position: relative;
+        }
+
+        .container .signature .image::before {
+            /* Mengatur gaya element dibawah element image*/
+            content: '';
+            position: absolute;
+            top: -25px;
+            right: 70%;
+            height: 300px;
+            width: 300px;
+            background: #f0f0f0;
+            border-radius: 50%;
+            box-shadow: 20px 0 0 #2c3e50;
+        }
+
+        .container .signature .content {
+            /* Mengatur class content ayang ada didalam class container > signature */
+            padding-left: 60px;
+        }
+
+        .container .signature .content .name {
+            padding-left: 10px;
+            font-size: 25px;
+            color: #f0f0f0;
+        }
+
+        .container .signature .content .position {
+            padding: 10px;
+            width: fit-content;
+            font-size: 15px;
+            color: #333;
+            margin: 10px 5px 0px;
+            border-radius: 50px;
+            background: #ccc;
+            text-align: center;
+        }
+
+        .container .signature .content .contact {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .container .signature .content .contact li {
+            list-style-type: none;
+            margin: 10px 0;
+            color: #ccc;
+            font-weight: 600;
+        }
+
+/*         .container .signature .content .contact li i {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            background: #2c3e50;
+            margin-right: 10px;
+            color: #fff;
+        } */
+
+        .container .signature .content .contact li svg {
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            padding: 4px;
+            border-radius: 50%;
+            vertical-align: middle;
+            background: #2c3e50;
+            margin-right: 10px;
+        }
+
+        .container .signature .content .icon {
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-flow: column;
+        }
+
+        .container .signature .content .icon a {
+            text-decoration: none;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 50%;
+            margin: 5px 0;
+        }
+
+        .container .signature .content .icon a:hover {
+            background: #333;
+        }
+
+        .tokopedia {
+            fill: rebeccapurple;
+            stroke: rebeccapurple;      
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="signature">
+            <div class="image"><img src="https://drive.google.com/uc?id=11aow2hQrAWcbwDFxqbtBFBul9OFpjVGb" alt=""></div>
+            <div class="content">
+                <h1 class="name">Limajari</h1>
+                <h3 class="position">Graphic Designer</h3>
+                <ul class="contact">
+                    <li><svg class= "tokopedia" width="100%"
+                        height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M166.667,50l-66.667,8.333l-66.667,-8.333l0,125l96.793,0c9.691,0 18.985,-3.85 25.838,-10.702c6.853,-6.853 10.703,-16.147 10.703,-25.838c-0,-36.893 -0,-88.46 -0,-88.46Z"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <circle cx="71.93" cy="103.846" r="28.07"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <circle cx="128.07" cy="103.846" r="28.07"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <path
+                                    d="M126.581,87.122c-0.149,-0.14 -0.202,-0.356 -0.133,-0.549c0.069,-0.193 0.246,-0.327 0.451,-0.34c0.387,-0.029 0.778,-0.042 1.171,-0.042c9.744,0 17.655,7.911 17.655,17.655c0,9.744 -7.911,17.655 -17.655,17.655c-9.744,-0 -17.654,-7.911 -17.654,-17.655c-0,-2.409 0.483,-4.705 1.358,-6.798c0.083,-0.186 0.267,-0.307 0.471,-0.308c0.204,-0.002 0.39,0.116 0.476,0.301c1.414,2.825 4.338,4.764 7.71,4.764c4.763,-0 8.631,-3.867 8.631,-8.631c-0,-2.357 -0.947,-4.494 -2.481,-6.052Z" />
+                                <path
+                                    d="M70.441,87.122c-0.15,-0.14 -0.203,-0.356 -0.134,-0.549c0.069,-0.193 0.246,-0.327 0.451,-0.34c0.387,-0.029 0.778,-0.042 1.172,-0.042c9.744,0 17.654,7.911 17.654,17.655c0,9.744 -7.91,17.655 -17.654,17.655c-9.744,-0 -17.655,-7.911 -17.655,-17.655c-0,-2.409 0.483,-4.705 1.358,-6.798c0.083,-0.186 0.268,-0.307 0.472,-0.308c0.203,-0.002 0.39,0.116 0.475,0.301c1.415,2.825 4.338,4.764 7.71,4.764c4.764,-0 8.631,-3.867 8.631,-8.631c-0,-2.357 -0.947,-4.494 -2.48,-6.052Z" />
+                                <path d="M70.938,54.272c0,-16.04 13.022,-29.062 29.062,-29.062c16.04,0 29.062,13.022 29.062,29.062"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <path d="M100,156.471l-18.75,-19.834c12.116,-9.731 24.625,-9.618 37.5,0l-18.75,19.834Z"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:2.89566;" />
+                            </g>
+                        </g>
+                    </svg>kelingking@gmail.com</li>
+                    <li><i class="fonawesome2"></i>Pademangan Barat, Sunter - Pulo Gadung <br>Jakarta Utara 12356</li>
+                    <li><i class="fonawesome3"></i>10213402154</li>
+                </ul>
+                <div class="icon">
+                    <a href="www.tokopedia.com"><svg class= "tokopedia" width="100%"
+                        height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M166.667,50l-66.667,8.333l-66.667,-8.333l0,125l96.793,0c9.691,0 18.985,-3.85 25.838,-10.702c6.853,-6.853 10.703,-16.147 10.703,-25.838c-0,-36.893 -0,-88.46 -0,-88.46Z"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <circle cx="71.93" cy="103.846" r="28.07"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <circle cx="128.07" cy="103.846" r="28.07"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <path
+                                    d="M126.581,87.122c-0.149,-0.14 -0.202,-0.356 -0.133,-0.549c0.069,-0.193 0.246,-0.327 0.451,-0.34c0.387,-0.029 0.778,-0.042 1.171,-0.042c9.744,0 17.655,7.911 17.655,17.655c0,9.744 -7.911,17.655 -17.655,17.655c-9.744,-0 -17.654,-7.911 -17.654,-17.655c-0,-2.409 0.483,-4.705 1.358,-6.798c0.083,-0.186 0.267,-0.307 0.471,-0.308c0.204,-0.002 0.39,0.116 0.476,0.301c1.414,2.825 4.338,4.764 7.71,4.764c4.763,-0 8.631,-3.867 8.631,-8.631c-0,-2.357 -0.947,-4.494 -2.481,-6.052Z" />
+                                <path
+                                    d="M70.441,87.122c-0.15,-0.14 -0.203,-0.356 -0.134,-0.549c0.069,-0.193 0.246,-0.327 0.451,-0.34c0.387,-0.029 0.778,-0.042 1.172,-0.042c9.744,0 17.654,7.911 17.654,17.655c0,9.744 -7.91,17.655 -17.654,17.655c-9.744,-0 -17.655,-7.911 -17.655,-17.655c-0,-2.409 0.483,-4.705 1.358,-6.798c0.083,-0.186 0.268,-0.307 0.472,-0.308c0.203,-0.002 0.39,0.116 0.475,0.301c1.415,2.825 4.338,4.764 7.71,4.764c4.764,-0 8.631,-3.867 8.631,-8.631c-0,-2.357 -0.947,-4.494 -2.48,-6.052Z" />
+                                <path d="M70.938,54.272c0,-16.04 13.022,-29.062 29.062,-29.062c16.04,0 29.062,13.022 29.062,29.062"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:1.7972;" />
+                                <path d="M100,156.471l-18.75,-19.834c12.116,-9.731 24.625,-9.618 37.5,0l-18.75,19.834Z"
+                                    style="fill:none;stroke-width:8.33px;stroke-linecap:round;stroke-miterlimit:2.89566;" />
+                            </g>
+                        </g>
+                    </svg></a>
+                    <a href="" class="classicon">facebook</a>
+                    <a href="" class="classicon">tokopedia</a>
+                    <a href="" class="classicon">shopee</a>
+                    <a href="" class="classicon">twitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
